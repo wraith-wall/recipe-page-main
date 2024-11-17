@@ -2,15 +2,19 @@
 	font-family: 'Young Serif'
 	src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype')
 
+@font-face
+	font-family: 'Outfit'
+	src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype')
+	
 *
 	margin: 0
 	box-sizing: border-box
 
 body
-	// font-family: 'Inter', sans-serif
+	font-family: 'Outfit', sans-serif
 	background-color: hsl(30, 54%, 90%)
-	min-height: 100vh
-	align-content: center
+	// min-height: 100vh
+	// align-content: center
 	// padding: 125px auto
 
 .recipe
@@ -20,14 +24,20 @@ body
 	background-color: white
 	border-radius: 20px
 	font-size: 16px
+	color: hsl(30, 10%, 34%)
 	img
 		height: 100%
 		width: 100%
 		border-radius: 10px
 	&__title
 		margin-top: 43px
+		font-family: 'Young Serif', sans-serif
+		font-weight: 400
+		color: hsl(24, 5%, 18%)
 	&__descr
 		margin-top: 34px
+	&__bald
+		font-weight: 700
 .preparation
 	margin-top: 36px
 	padding: 27px
@@ -35,10 +45,26 @@ body
 	border-radius: 10px
 	&__list
 		margin-top: 22px
+		margin-left: -18px
+	&__item
+		padding-left: 32px
+		&:not(last-child)
+			margin-bottom: 20px
+		&::marker
+			color: hsl(332, 51%, 32%)
+	&__title
+		color: hsl(332, 51%, 32%)
 .ingredients
 	margin-top: 36px
 	&__list
 		margin-top: 28px
+		margin-left: -21px
+	&__item
+		padding-left: 28px
+		&:not(last-child)
+			margin-bottom: 20px
+		&::marker
+			color: hsl(14, 45%, 36%)
 .divider
 	margin-top: 33px
 	height: 1px
@@ -47,9 +73,26 @@ body
 	margin-top: 35px
 	&__list
 		margin-top: 33px
+		margin-left: -20px
+	&__item
+		padding-left: 28px
+		&:not(last-child)
+			margin-bottom: 20px
+		&::marker
+			color: hsl(14, 45%, 36%)
+			font-weight: 700
 .nutrition
 	margin-top: 35px
 	&__descr
 		margin-top: 35px
 	&__table
 		margin-top: 35px
+	&__cell--value
+		padding-left: 245px
+		color: hsl(14, 45%, 36%)
+.title
+	&_fz26
+		font-family: 'Young Serif', sans-serif
+		font-size: 26px
+		font-weight: 400
+		color: hsl(14, 45%, 36%)
